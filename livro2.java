@@ -17,11 +17,12 @@ public class livro2 {
         System.out.println("Qual o preço do livro: ");
         int preco = scanner.nextInt();
 
-        livro livro1 = new livro(Titulo, Autor, Numero, preco);
+        livro livro1 = new livro(Titulo, Autor, Numero, preco, null);
 
         System.out.println("Titulo do livro: " + livro1.getTitulo());
         System.out.println("Autor do livro: " + livro1.getAutor());
         System.out.println("Numero de paginas: " + livro1.getNumero());
         System.out.println("Preco livro: " + livro1.getPreco());
+        System.out.println("ISBN: " + livro1.getIsbn());
     }
 }

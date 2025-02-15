@@ -4,21 +4,18 @@ public class livro {
         String autor;
         int Numero;
         double preco;
-        public String 
+        Double isbn;
         
-
-        getTitulo() {
+        public String getTitulo() {
             return Titulo;
-        }
-
-        public livro(String titulo, String autor, int numero, double preco) {
+        }public livro(String titulo, String autor, int numero, double preco, Double isbn) {
             Titulo = titulo;
             this.autor = autor;
             Numero = numero;
             this.preco = preco;
+            this.isbn = isbn;
         }
-
-        
+    
         public void setTitulo(String titulo) {
             Titulo = titulo;
         }
@@ -40,5 +37,13 @@ public class livro {
         public void setPreco(double preco) {
             this.preco = preco;
         }
+        public Double getIsbn() {
+            return isbn;
+        }
+        public void setIsbn(Double isbn) {
+            this.isbn = isbn;
+        }
+
+    
         
 }
